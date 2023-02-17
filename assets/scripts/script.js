@@ -1,5 +1,5 @@
 //read data
-let data = await getData("../../data.json");
+let data = await getData("data.json");
 
 //get summary data element to append childs to
 let summaryData = document.getElementById(
