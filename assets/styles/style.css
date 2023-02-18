@@ -161,12 +161,14 @@ body {
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
-.result-summary-component__score h2 {
+.result-summary-component__score > p:first-of-type {
   font-size: 1.5rem;
+  font-weight: bold;
 }
-.result-summary-component__score > p:first-child {
+.result-summary-component__score > h2 {
   font-size: 1.15rem;
   color: hsl(241deg, 100%, 89%);
+  font-weight: 500;
 }
 .result-summary-component__score > p:last-child {
   text-align: center;
@@ -185,10 +187,11 @@ body {
   align-items: center;
   row-gap: 0.25rem;
 }
-.result-summary-component__score-number h1 {
+.result-summary-component__score-number p:first-child {
   font-size: 3.5rem;
+  font-weight: bold;
 }
-.result-summary-component__score-number p {
+.result-summary-component__score-number p:last-child {
   font-size: 1rem;
   color: rgba(200, 199, 255, 0.7);
 }
@@ -288,11 +291,6 @@ footer a {
     transition: all 300ms;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 740px) {
-  html {
-    font-size: 2.1vw;
-  }
-}
 @media only screen and (min-width: 480px) {
   body {
     display: flex;
@@ -314,13 +312,13 @@ footer a {
     height: 100%;
     padding: 2.5rem 3.5rem 3.5rem 3.5rem;
   }
-  .result-summary-component__score p:first-child {
-    font-size: 1.5rem;
-  }
-  .result-summary-component__score h2 {
+  .result-summary-component__score > p:first-of-type {
     font-size: 2rem;
   }
-  .result-summary-component__score p:last-child {
+  .result-summary-component__score > h2 {
+    font-size: 1.5rem;
+  }
+  .result-summary-component__score > p:last-child {
     font-size: 1.1rem;
   }
   .result-summary-component__score-number {
@@ -328,8 +326,11 @@ footer a {
     height: 12.5rem;
     margin: 0.75rem 0;
   }
-  .result-summary-component__score-number h1 {
+  .result-summary-component__score-number p:first-child {
     font-size: 4.5rem;
+  }
+  .result-summary-component__score-number p:last-child {
+    font-size: 1.1rem;
   }
   .result-summary-component__summary {
     flex-basis: 50%;
